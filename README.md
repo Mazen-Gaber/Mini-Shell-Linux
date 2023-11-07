@@ -14,16 +14,16 @@ production          action
 %%
 THIRD PART
 ```
-##### FIRST PART:
-FIRST PART in of a yacc specification contains:
+##### **FIRST PART:**
+FIRST PART of a yacc specification contains:
 * C declarations enclosed in %{ %}
 * yacc definitions:
   * %start
   * %tokens
   * %union
   * type
-  * 
-##### MIDDLE SECTION:
+
+##### **MIDDLE SECTION:**
 -> represents a grammar - a set of productions. The left-hand side of a production is followed by a colon, and a right hand side.
 -> multiple right-hand sides may follow separated by a '|'
 -> Actions associated with a rule are entered in braces
@@ -35,7 +35,7 @@ FIRST PART in of a yacc specification contains:
 * ```statement: identifier '+' identifier``` -> ```{ $$ = $1 + $3;}```
 * ```statement: identifier '-' identifier``` -> ```{ $$ = $1 - $3;}```
 
-##### THIRD PART:
+##### **THIRD PART:**
 -> contains valid C code that supports the language processing
   * symbol table implementation
   * functions that might be called by actions associated with productions in the middle part
