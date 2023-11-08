@@ -6,6 +6,7 @@ To run the minishell, please insert the following commands in the terminal:
  * ```./shell```
 
 Then the shell is ready for execution and it will appear as ```myshell>```
+
 For any updates in the files, remake the building by inserting before the previous commands:
 ```make clean```
 
