@@ -29,7 +29,7 @@ Then the shell is ready for execution and it will appear as ```myshell>```
 
 For any updates in the files, remake the building by inserting before the previous commands:
 ```make clean```
-
+---
 ## **Summarizing Lex/Yacc:**
 ### LEX (Lexer Generator):
 
@@ -37,8 +37,7 @@ For any updates in the files, remake the building by inserting before the previo
 ```
 FIRST PART
 %%
-rule1          action1
-rule2          action2
+rule          action
 ...
 %%
 THIRD PART
@@ -72,7 +71,7 @@ The third part of a Lex specification contains valid C code that supports the la
 * Additional functions or data structures used by the lexer
 * Code snippets that are called by the actions in the second part of the Lex specification
 
-
+---
 ### YACC (Yet Another Compiler Compiler):
 
 #### YACC structure:
